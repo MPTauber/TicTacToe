@@ -45,3 +45,14 @@ def ttt_blanks():
             blanks.append(x + 1)
     
     return blanks
+
+def end():
+    if last_draw == player_first:
+        print("You are the winner.")
+    elif last_draw == comp_first:
+        print("The computer won.")
+    elif last_draw == "Draw":
+        print("It is a draw. Play again.")
+
+def winner():
+    
