@@ -33,3 +33,15 @@ def ttt_formating():
             ttt_list.append("X")
         elif secret_ttt[x] == "blank":
             ttt_list.append(" ")
+
+def ttt_blanks():
+    blanks = []
+
+    blanks_array = (ttt_array == "blank")
+    flat_blanks_array = blanks_array.flatten()
+
+    for x in range(0, len(flat_blanks_array)):
+        if flat_blanks_array[x] == True:
+            blanks.append(x + 1)
+    
+    return blanks
